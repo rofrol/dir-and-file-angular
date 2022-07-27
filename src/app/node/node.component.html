@@ -1,0 +1,4 @@
+<ng-container *ngFor="let node of contents">
+  <app-dir *ngIf="node.type === 'directory'" [data]="node"></app-dir>
+  <app-file *ngIf="node.type === 'file'">{{node.name}}</app-file>
+</ng-container>

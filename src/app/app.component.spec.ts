@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'goldman_sachs2'`, () => {
+  it(`should have as title 'dir-and-file-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('goldman_sachs2');
+    expect(app.title).toEqual('dir-and-file-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('goldman_sachs2 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('dir-and-file-angular app is running!');
   });
 });

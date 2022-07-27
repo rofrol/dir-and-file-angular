@@ -1,0 +1,8 @@
+<div (click)="expanded = !expanded">
+  <span *ngIf="expanded" class="triangle">▼</span>
+  <span *ngIf="!expanded" class="triangle">▶</span>
+  {{data.name}}
+</div>
+<div *ngIf="expanded" class="content">
+  <app-node [contents]="data.contents"></app-node>
+</div>
